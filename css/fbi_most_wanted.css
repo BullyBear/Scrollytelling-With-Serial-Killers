@@ -1,0 +1,253 @@
+* {
+	font-family: Georgia;
+	font-weight: 400;
+}
+
+body {
+	margin: 0;
+	line-height: 1.5;
+    color: #121212;
+    background-color: #ffffff;
+    display: block;
+
+}
+
+div {
+	display: block;
+}
+
+text {
+    display: block;
+    white-space: nowrap;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+audio, canvas, progress, video {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+.contained {
+	position: relative;
+	margin-bottom: 1rem;
+}
+
+.contained .paragraph {
+    width: 620px;
+    z-index: 3;
+    max-width: calc(100% - 20px);
+    margin: auto;
+    padding-bottom: 0px;
+}
+
+.contained .paragraph p {
+    margin-bottom: 1rem;
+}
+
+
+#us-map-chart-container {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.graph-scroll-fixed .graph {
+    position: fixed;
+    top: 0px;
+}
+
+.graph {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: auto;
+    width: 100%;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+#us-map-charts {
+    position: relative;
+}
+
+#svg-us-map {
+    background-image: url(https://interactive.guim.co.uk/atoms/2017/11/homeless/v/1515013823829/assets/images/harrison-25.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+:not(svg) {
+    transform-origin: 0px 0px;
+}
+
+svg {
+    overflow: visible;
+}
+
+
+.coast-buffers, .state-borders {
+    fill: none;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+}
+
+.state-borders {
+    stroke-width: 1px;
+}
+
+
+#svg-other-map, #canvas-circles-map, #canvas-trips-map {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+
+#canvas-trips-map {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.origin-city, .directions-city {
+    fill: #E01A25;
+}
+
+.origin-city-label, .directions-city-label {
+    fill: black;
+    font-size: 11px;
+    font-family: "Guardian Text Sans Web","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+}
+
+
+
+.us-map-directions {
+    fill: none;
+    stroke: #E01A25;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-width: 1.5px;
+}
+
+#us-map-charts .circle-legend-circle {
+    fill: none;
+    stroke: #0AA5C2;
+    opacity: 0.8;
+    stroke-width: 1.4px;
+}
+
+#us-map-charts .circle-legend-line {
+    stroke: #B2B2B2;
+    stroke-dasharray: 0,3.5;
+    stroke-linecap: round;
+    stroke-width: 1.5px;
+}
+
+#us-map-charts .circle-legend-label {
+    fill: #757575;
+    font-size: 10px;
+    text-anchor: start;
+    font-family: "Guardian Text Sans Web","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+}
+
+@media (max-width: 500px)
+#us-map-charts .circle-legend-label {
+    font-size: 9px;
+}
+
+#us-map-charts .axis.axis-color-us-map {
+    fill: #757575;
+    font-size: 10px;
+    text-anchor: start;
+    font-family: "Guardian Text Sans Web","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+}
+
+
+#monthly-bar-chart-text {
+    opacity: 0;
+    max-width: 80%;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.us-map-total-ticker-note {
+    color: #757575;
+    font-size: 13px;
+    font-weight: 300;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    font-family: "Guardian Text Sans Web","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+}
+
+.us-map-total-ticker {
+    font-size: 26px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: "Guardian Egyptian Web","Guardian Text Egyptian Web",Georgia,serif;
+}
+
+#monthly-bar-chart-container .axis path, #monthly-bar-chart-container .axis line {
+    display: none;
+}
+
+#monthly-bar-chart-container .axis .tick text {
+    font-size: 12px;
+    font-family: "Guardian Text Sans Web","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+}
+
+
+.graph_prose {
+    z-index: 3;
+    max-width: 100%;
+    width: 640px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+}
+
+.graph_prose>div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 1.6;
+}
+
+.graph_prose>div.graph-scroll-active {
+    opacity: 1;
+}
+
+.graph_prose .trigger p {
+    background: rgba(255,255,255,0.8);
+    padding: 10px;
+    margin-bottom: 1rem;
+}
+
+.graph_prose>div:last-child {
+    margin-bottom: 0px !important;
+}
+
+
+p {
+    margin-top: 0;
+}
+
+
+
+
+
+
+
